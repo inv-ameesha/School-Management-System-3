@@ -33,6 +33,7 @@
                 <?php foreach($student as $s): ?>
                     <tr>
                         <td><?= htmlspecialchars($s['name'])?></td>
+                        <!--htmlspecialchars : convert special characters(lt,gt,'',"") to html entity,avoids cross-site scripting -->
                         <td><?= htmlspecialchars($s['reg_no'])?></td>
                         <td><?= htmlspecialchars($s['email'])?></td>
                         <td><?= htmlspecialchars($s['phone']) ?></td>
